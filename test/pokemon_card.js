@@ -24,8 +24,9 @@ const changePokemon = async () => {
   pokeNumber.textContent = `#${response.id}`;
   pokeName.textContent = response.name;
   badge.textContent=response.name;
-  let random_color= Math.round(Math.random() * 50); // 1 et 151
+  let random_color=  Math.round(Math.random() * 50); // 1 et 151
   bg.style.backgroundColor= colorArray[random_color]
+  console.log(response)
 };
 
 changePokemon();
